@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Convertir HTML a PDF</title>
+    <!-- El script de la librería-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.min.js"></script>
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.js"></script>-->
+    <!--Nuestro script, que se encarga de crear el PDF usando la librería-->
+    <script src="script.js"></script>
+    <!-- Algunos estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body type="application/pdf">
+    <h1>Una pagina</h1>
+    <div id="imprime" type="application/pdf">
+        <canvas class="canvas" id="canvas1"></canvas>
+    </div>
+    <hr>
+    <button onclick="aa()">imprime</button>
+    <strong>Presiona el siguiente botón para crear un PDF:</strong>
+    <button id="btnCrearPdf">Click aquí</button>
+    <h5>Estamos probando la creación de un PDF desde HTML usando JavaScript</h5>
+   
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas dignissimos laudantium laboriosam asperiores?
+        Doloremque fuga quia odit quas. Obcaecati aliquam suscipit molestias? Architecto nisi blanditiis maxime beatae
+        temporibus assumenda ex.</p>
+    <img src="surferapp.jpg" alt="Una imagen">
+    <h1>Otro encabezado</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nicolas Medina</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
